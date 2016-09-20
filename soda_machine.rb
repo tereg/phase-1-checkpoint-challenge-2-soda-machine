@@ -17,6 +17,8 @@ class SodaMachine
   end 
 
   def sell(soda_brand)
+    soda_to_be_sold = find_soda(soda_brand)
+    @sodas.delete(soda_to_be_sold) 
   end
 
 end
